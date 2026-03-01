@@ -1,45 +1,25 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Generate hero and section images matching uploaded design reference",
+  "title": "Redesign hero section layout and image",
   "requirements": [
     {
-      "id": "REQ-3",
-      "summary": "Integrate all generated images as static assets and render them in their correct sections",
+      "id": "REQ-4",
+      "summary": "Redesign Hero section with full-width background image layout, overlay, centered content, and updated positioning of CTA buttons and badges while maintaining all existing elements",
       "acceptanceCriteria": [
-        "Hero section displays a warm, professional care-provider photo on the right side of the hero layout",
-        "Youth Group Homes banner displays a photo of children/youth in a nurturing group home environment",
-        "Horse and Animal Interactions section displays two stacked photos of participants engaged with animals",
-        "Adult Day Programming section displays a photo of adults engaged in group activities",
-        "Gallery section carousel displays at least 4 distinct facility/home interior and community activity photos with location captions",
-        "All images are loaded from frontend/public/assets/generated as static assets",
-        "No broken image links appear anywhere on the page"
+        "Hero section has a visually distinct layout different from the previous side-by-side columns design",
+        "New hero image (hero-redesign.dim_1440x900.png) is rendered from frontend/public/assets/generated",
+        "Headline 'Reliable care, rooted in community.' is prominently displayed",
+        "Both CTA buttons are visible and functional",
+        "Stat badges (24/7, 100%, Toledo) and the DODD accreditation badge are present in the updated layout",
+        "Design is responsive and looks good on mobile and desktop",
+        "Primary green (#2D7A5F) brand colors and typography remain consistent with the rest of the site"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/Hero.tsx",
           "operation": "modify",
-          "description": "Update the hero section to display the professional care-provider photo using the generated image frontend/public/assets/generated/hero-professional.dim_600x700.png on the right side of the hero layout. Ensure the image is rendered with appropriate sizing and positioning to match the design reference."
-        },
-        {
-          "path": "frontend/src/components/YouthGroupHomes.tsx",
-          "operation": "modify",
-          "description": "Update the Youth Group Homes banner section to display the group home photo using the generated image frontend/public/assets/generated/youth-group-home.dim_800x500.png. Ensure the image is positioned correctly within the banner layout to show children/youth in a nurturing environment."
-        },
-        {
-          "path": "frontend/src/components/HorseAndAnimalInteractions.tsx",
-          "operation": "modify",
-          "description": "Update the Horse and Animal Interactions section to display two stacked photos using the generated images frontend/public/assets/generated/horse-interaction-1.dim_400x300.png and frontend/public/assets/generated/horse-interaction-2.dim_400x300.png. Position the images vertically stacked to show participants engaged with animals as shown in the design reference."
-        },
-        {
-          "path": "frontend/src/components/AdultDayProgramming.tsx",
-          "operation": "modify",
-          "description": "Update the Adult Day Programming section to display the group activity photo using the generated image frontend/public/assets/generated/adult-day-activity.dim_500x380.png. Ensure the image shows adults engaged in group activities and is positioned correctly within the section layout."
-        },
-        {
-          "path": "frontend/src/components/Gallery.tsx",
-          "operation": "modify",
-          "description": "Update the 'A Look Inside Our Homes' carousel gallery to display at least 4 distinct photos using the generated images: frontend/public/assets/generated/gallery-home-1.dim_400x300.png, frontend/public/assets/generated/gallery-day-center.dim_400x300.png, frontend/public/assets/generated/gallery-community-rec.dim_400x300.png, and frontend/public/assets/generated/gallery-respite.dim_400x300.png. Include appropriate location captions for each image and ensure the carousel functionality works correctly with all images."
+          "description": "Replace the current two-column side-by-side layout with a full-width hero design using frontend/public/assets/generated/hero-redesign.dim_1440x900.png as a background image. Add a semi-transparent overlay for text readability. Center or asymmetrically position the headline 'Reliable care, rooted in community.' and subtext. Reposition the CTA buttons ('Get Started Today' and 'Learn More') within the overlaid content area. Integrate the stat badges (24/7 Support, 100% Certified Staff, Toledo-Based) and the DODD accreditation badge into the new layout, ensuring they remain visible and appropriately positioned. Maintain responsive behavior for mobile and desktop viewports, and preserve the primary green brand color and existing typography."
         }
       ]
     }

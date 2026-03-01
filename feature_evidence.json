@@ -2,14 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-integrate-all-generated-images-as-static-assets-in-frontend-public-assets-generated-and-render-them-in-their-correct-sections-hero-photo-in-the-hero-section-group-home-photo-in-the-youth-group-homes-banner-horse-animal-interaction-photos-in-the-horse-and-animal-interactions-section-adult-day-programming-activity-photo-in-the-adult-day-programming-section-and-gallery-images-in-the-a-look-inside-our-homes-carousel",
-      "featureTitle": "Integrate all generated images as static assets in frontend/public/assets/generated and render them in their correct sections: hero photo in the hero section, group home photo in the Youth Group Homes banner, horse/animal interaction photos in the Horse and Animal Interactions section, adult day programming activity photo in the Adult Day Programming section, and gallery images in the 'A Look Inside Our Homes' carousel.",
+      "featureId": "feature-redesign-the-hero-section-in-frontend-src-components-hero-tsx-with-a-fresh-layout-replace-the-current-side-by-side-arrangement-with-a-full-width-visually-striking-design-use-a-large-background-style-hero-image-with-an-overlay-center-aligned-or-asymmetric-headline-and-subtext-updated-cta-button-placement-and-retain-the-stat-badges-24-7-100-toledo-and-dodd-accreditation-badge-in-the-new-layout-the-new-hero-image-hero-redesign-dim-1440x900-png-should-be-rendered-from-frontend-public-assets-generated",
+      "featureTitle": "Redesign the Hero section in frontend/src/components/Hero.tsx with a fresh layout. Replace the current side-by-side arrangement with a full-width, visually striking design: use a large background-style hero image with an overlay, center-aligned or asymmetric headline and subtext, updated CTA button placement, and retain the stat badges (24/7, 100%, Toledo) and DODD accreditation badge in the new layout. The new hero image (hero-redesign.dim_1440x900.png) should be rendered from frontend/public/assets/generated.",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/AdultDayProgramming.tsx",
-        "frontend/src/components/Gallery.tsx",
-        "frontend/src/components/HorseAndAnimalInteractions.tsx",
-        "frontend/src/components/YouthGroupHomes.tsx"
+        "frontend/src/components/Hero.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -19,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
+        "REQ-4"
       ],
       "confidence": "high"
     }

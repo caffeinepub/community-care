@@ -1,52 +1,45 @@
 {
   "kind": "build_request",
-  "title": "Generate hero and section images matching uploaded design reference",
-  "projectName": "Community Care Connect",
+  "title": "Redesign hero section layout and image",
+  "projectName": "Community Care",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-3",
-      "text": "Integrate all generated images as static assets in frontend/public/assets/generated and render them in their correct sections: hero photo in the hero section, group home photo in the Youth Group Homes banner, horse/animal interaction photos in the Horse and Animal Interactions section, adult day programming activity photo in the Adult Day Programming section, and gallery images in the 'A Look Inside Our Homes' carousel.",
+      "id": "REQ-4",
+      "text": "Redesign the Hero section in frontend/src/components/Hero.tsx with a fresh layout. Replace the current side-by-side arrangement with a full-width, visually striking design: use a large background-style hero image with an overlay, center-aligned or asymmetric headline and subtext, updated CTA button placement, and retain the stat badges (24/7, 100%, Toledo) and DODD accreditation badge in the new layout. The new hero image (hero-redesign.dim_1440x900.png) should be rendered from frontend/public/assets/generated.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-3"
+          "msg-4"
         ],
         "quotes": [
-          "design please"
+          "change hero section design and image"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section displays a warm, professional care-provider photo on the right side of the hero layout",
-        "Youth Group Homes banner displays a photo of children/youth in a nurturing group home environment",
-        "Horse and Animal Interactions section displays two stacked photos of participants engaged with animals",
-        "Adult Day Programming section displays a photo of adults engaged in group activities",
-        "Gallery section carousel displays at least 4 distinct facility/home interior and community activity photos with location captions",
-        "All images are loaded from frontend/public/assets/generated as static assets",
-        "No broken image links appear anywhere on the page"
+        "Hero section has a visually distinct layout different from the previous side-by-side columns design",
+        "New hero image (hero-redesign.dim_1440x900.png) is rendered from frontend/public/assets/generated",
+        "Headline 'Reliable care, rooted in community.' is prominently displayed",
+        "Both CTA buttons are visible and functional",
+        "Stat badges (24/7, 100%, Toledo) and the DODD accreditation badge are present in the updated layout",
+        "Design is responsive and looks good on mobile and desktop",
+        "Primary green (#2D7A5F) brand colors and typography remain consistent with the rest of the site"
       ]
     }
   ],
   "constraints": [
-    "All images must be served as static assets from frontend/public/assets/generated — do not route image delivery through the backend canister",
-    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui"
+    "Do not modify files listed in frontend.immutablePaths",
+    "Retain the headline text 'Reliable care, rooted in community.' and existing stat badges",
+    "Hero image must be served from frontend/public/assets/generated, not through the backend"
   ],
   "nonGoals": [
-    "Adding new page sections beyond those already specified in existing features",
-    "Changing the color theme or typography established in the existing visual theme feature",
-    "Backend data storage for images"
+    "Redesigning any section other than the Hero",
+    "Changing the site-wide color theme or typography",
+    "Modifying the Navbar, TrustBar, or any other component"
   ],
   "imageRequirements": {
     "required": [
-      "Smiling Black male healthcare professional in blue scrubs holding a tablet, warm natural indoor lighting, friendly and approachable expression, upper-body portrait against a soft blurred home background (hero-professional.dim_600x700.png)",
-      "Diverse group of children and teenagers engaged in structured activities around a table in a bright, modern group home living space, warm natural light (youth-group-home.dim_800x500.png)",
-      "Two women and a child laughing and interacting together indoors in a bright living room, candid joyful moment (horse-interaction-1.dim_400x300.png)",
-      "Small group of young adults and a teenager smiling and engaged in a tabletop craft or board game activity (horse-interaction-2.dim_400x300.png)",
-      "Group of adults with developmental disabilities engaged in a joyful group activity around a table, colorful art supplies and snacks visible, bright community center setting (adult-day-activity.dim_500x380.png)",
-      "Bright modern shared living room interior of a group home, tidy and welcoming, natural light through windows (gallery-home-1.dim_400x300.png)",
-      "Diverse group of adults participating in a community day center activity, smiling and engaged (gallery-day-center.dim_400x300.png)",
-      "Adults with disabilities enjoying outdoor community recreation, sunny day, park or garden setting (gallery-community-rec.dim_400x300.png)",
-      "Professional caregiver sitting with an elderly or adult client in a comfortable home setting, warm and reassuring atmosphere (gallery-respite.dim_400x300.png)"
+      "Warm, professional community healthcare scene — a diverse group of caregivers and clients in a bright, welcoming indoor or outdoor setting with natural light and a sense of trust and warmth (hero-redesign.dim_1440x900.png)"
     ],
     "edits": []
   }

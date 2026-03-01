@@ -1,16 +1,14 @@
 # Specification
 
 ## Summary
-**Goal:** Generate and integrate all required images as static assets into the Community Care Connect frontend, rendering them in their correct page sections to match the uploaded design reference.
+**Goal:** Redesign the Hero section with a full-width, background-image-based layout replacing the current side-by-side columns design.
 
 **Planned changes:**
-- Generate all missing images (hero professional, youth group home, horse/animal interaction photos, adult day activity, and gallery images)
-- Save all generated images to `frontend/public/assets/generated/`
-- Render the hero photo on the right side of the hero section
-- Render the youth group home photo in the Youth Group Homes banner section
-- Render two stacked animal/interaction photos in the Horse and Animal Interactions section
-- Render the adult day activity photo in the Adult Day Programming section
-- Render at least 4 gallery images in the "A Look Inside Our Homes" carousel with location captions
-- Ensure no broken image links appear on the page
+- Replace the side-by-side Hero layout with a full-width design using a large background hero image with an overlay
+- Center-align or use an asymmetric arrangement for the headline "Reliable care, rooted in community." and subtext
+- Update CTA button placement to fit the new layout
+- Retain stat badges (24/7, 100%, Toledo) and DODD accreditation badge in the redesigned layout
+- Use new hero image (`hero-redesign.dim_1440x900.png`) served from `frontend/public/assets/generated`
+- Ensure responsive behavior on mobile and desktop, maintaining primary green (#2D7A5F) brand colors
 
-**User-visible outcome:** The landing page displays warm, professional photos in every section — hero, youth group homes, horse and animal interactions, adult day programming, and the gallery carousel — matching the uploaded design reference.
+**User-visible outcome:** The Hero section displays a visually striking full-width background image with overlay, prominent headline, functional CTA buttons, and all existing badges in a fresh layout.
