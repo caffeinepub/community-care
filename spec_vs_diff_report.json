@@ -1,0 +1,56 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-01T20:00:07.101Z",
+  "summary": "The diff implements a full frontend landing page with all required image integrations. All specified images are referenced from /assets/generated/ paths in their correct sections. However, the actual image files (PNG assets) are not present in the diff — only 4 image files are listed as omitted due to limits, and no PNG files appear in the added files list. The components correctly reference all 9 required image paths, but the physical static asset files under frontend/public/assets/generated/ are not confirmed as added.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "All images must be served as static assets from frontend/public/assets/generated — the actual PNG image files must exist at those paths.",
+      "reason": "The diff summary notes 4 files omitted due to limits for added files, and no PNG files appear in the listed added files. The components reference image paths correctly, but the physical asset files (hero-professional.dim_600x700.png, youth-group-home.dim_800x500.png, horse-interaction-1.dim_400x300.png, horse-interaction-2.dim_400x300.png, adult-day-activity.dim_500x380.png, gallery-home-1.dim_400x300.png, gallery-day-center.dim_400x300.png, gallery-community-rec.dim_400x300.png, gallery-respite.dim_400x300.png) are not confirmed as present in frontend/public/assets/generated/.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/YouthGroupHomes.tsx",
+        "frontend/src/components/HorseAndAnimalInteractions.tsx",
+        "frontend/src/components/AdultDayProgramming.tsx",
+        "frontend/src/components/Gallery.tsx"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "requirement": "Adult Day Programming section displays a photo of adults engaged in group activities using adult-day-activity.dim_500x380.png.",
+      "reason": "The AdultDayProgramming.tsx component is truncated in the diff and it is not confirmed that the adult-day-activity image is actually rendered in the component — the truncation cuts off before the image rendering code can be verified.",
+      "evidence": [
+        "frontend/src/components/AdultDayProgramming.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.62,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AdultDayProgramming.tsx",
+    "frontend/src/components/ContactSection.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Gallery.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/HorseAndAnimalInteractions.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/ServicesGrid.tsx",
+    "frontend/src/components/Standards.tsx",
+    "frontend/src/components/TrustBar.tsx",
+    "frontend/src/components/YouthGroupHomes.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

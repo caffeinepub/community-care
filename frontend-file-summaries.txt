@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system defining the brand palette (deep forest green, warm cream, dark charcoal), custom font imports for Inter and Playfair Display, and Tailwind base/component/utility layers.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with brand color tokens (green, cream, charcoal, highlight), custom font families, pill border-radius, card box shadows, and accordion animations.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder module for React Query hooks; no backend queries needed for this static landing page.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with logo, nav links (Services, Youth Programs, Therapists, Quality Control), a green CTA button, and a responsive mobile hamburger menu.",
+  "frontend/src/components/Hero.tsx": "Hero section with bold headline \"Reliable care, rooted in community.\", subtitle, two CTA buttons, stat badges (24/7, 100%, Toledo), and the generated hero professional photo on the right with a decorative background shape.",
+  "frontend/src/components/TrustBar.tsx": "Horizontal trust bar displaying four certification/recognition badges (Ohio Dept of Health, CPI Certified, DODD Accredited, CANS Assessment) with icons.",
+  "frontend/src/components/ServicesGrid.tsx": "Six-card services grid titled \"Comprehensive Care for Every Stage\" covering Respite, Adult Day, Community Activities, Vocational Rehab, Non-Medical Transport, and On-Call Nurse Activities.",
+  "frontend/src/components/YouthGroupHomes.tsx": "Full-width dark-green banner for Youth Group Homes & Emergency Respite with bullet points, a CTA button, and the generated youth group home photo on the right.",
+  "frontend/src/components/HorseAndAnimalInteractions.tsx": "Two-column section with two stacked generated animal interaction photos on the left and descriptive text plus a testimonial quote on the right.",
+  "frontend/src/components/AdultDayProgramming.tsx": "Adult Day Programming section with Morning/Afternoon session tabs, a feature highlight card listing activities, and the generated adult day activity photo.",
+  "frontend/src/components/Standards.tsx": "Four-card \"Uncompromising Standards\" section showcasing CPI Training, PPE Certified, CANS Assessment, and Medical Oversight certifications with icons.",
+  "frontend/src/components/Gallery.tsx": "Dark \"A Look Inside Our Homes\" gallery section with a paginated 3-up image carousel showing four generated facility photos with location captions and prev/next controls.",
+  "frontend/src/components/ContactSection.tsx": "Dark contact/CTA section titled \"Start a new chapter of care.\" with a full contact form (name, address, phone, message) and a contact info column with location, phone, and email.",
+  "frontend/src/components/Footer.tsx": "Multi-column dark footer with logo, social icons, link columns (Services, Programs, Join Our Mission), copyright, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Root application component composing all page sections in order: Navbar, Hero, TrustBar, ServicesGrid, YouthGroupHomes, HorseAndAnimalInteractions, AdultDayProgramming, Standards, Gallery, ContactSection, and Footer."
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Generate hero and section images matching uploaded design reference",
+  "requirements": [
+    {
+      "id": "REQ-3",
+      "summary": "Integrate all generated images as static assets and render them in their correct sections",
+      "acceptanceCriteria": [
+        "Hero section displays a warm, professional care-provider photo on the right side of the hero layout",
+        "Youth Group Homes banner displays a photo of children/youth in a nurturing group home environment",
+        "Horse and Animal Interactions section displays two stacked photos of participants engaged with animals",
+        "Adult Day Programming section displays a photo of adults engaged in group activities",
+        "Gallery section carousel displays at least 4 distinct facility/home interior and community activity photos with location captions",
+        "All images are loaded from frontend/public/assets/generated as static assets",
+        "No broken image links appear anywhere on the page"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the hero section to display the professional care-provider photo using the generated image frontend/public/assets/generated/hero-professional.dim_600x700.png on the right side of the hero layout. Ensure the image is rendered with appropriate sizing and positioning to match the design reference."
+        },
+        {
+          "path": "frontend/src/components/YouthGroupHomes.tsx",
+          "operation": "modify",
+          "description": "Update the Youth Group Homes banner section to display the group home photo using the generated image frontend/public/assets/generated/youth-group-home.dim_800x500.png. Ensure the image is positioned correctly within the banner layout to show children/youth in a nurturing environment."
+        },
+        {
+          "path": "frontend/src/components/HorseAndAnimalInteractions.tsx",
+          "operation": "modify",
+          "description": "Update the Horse and Animal Interactions section to display two stacked photos using the generated images frontend/public/assets/generated/horse-interaction-1.dim_400x300.png and frontend/public/assets/generated/horse-interaction-2.dim_400x300.png. Position the images vertically stacked to show participants engaged with animals as shown in the design reference."
+        },
+        {
+          "path": "frontend/src/components/AdultDayProgramming.tsx",
+          "operation": "modify",
+          "description": "Update the Adult Day Programming section to display the group activity photo using the generated image frontend/public/assets/generated/adult-day-activity.dim_500x380.png. Ensure the image shows adults engaged in group activities and is positioned correctly within the section layout."
+        },
+        {
+          "path": "frontend/src/components/Gallery.tsx",
+          "operation": "modify",
+          "description": "Update the 'A Look Inside Our Homes' carousel gallery to display at least 4 distinct photos using the generated images: frontend/public/assets/generated/gallery-home-1.dim_400x300.png, frontend/public/assets/generated/gallery-day-center.dim_400x300.png, frontend/public/assets/generated/gallery-community-rec.dim_400x300.png, and frontend/public/assets/generated/gallery-respite.dim_400x300.png. Include appropriate location captions for each image and ensure the carousel functionality works correctly with all images."
+        }
+      ]
+    }
+  ]
+}

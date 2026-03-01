@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Smiling Black male healthcare professional in blue scrubs holding a tablet, warm natural indoor lighting, friendly and approachable expression, upper-body portrait against a soft blurred home background (hero-professional.dim_600x700.png)\n- Diverse group of children and teenagers engaged in structured activities around a table in a bright, modern group home living space, warm natural light (youth-group-home.dim_800x500.png)\n- Two women and a child laughing and interacting together indoors in a bright living room, candid joyful moment (horse-interaction-1.dim_400x300.png)\n- Small group of young adults and a teenager smiling and engaged in a tabletop craft or board game activity (horse-interaction-2.dim_400x300.png)\n- Group of adults with developmental disabilities engaged in a joyful group activity around a table, colorful art supplies and snacks visible, bright community center setting (adult-day-activity.dim_500x380.png)\n- Bright modern shared living room interior of a group home, tidy and welcoming, natural light through windows (gallery-home-1.dim_400x300.png)\n- Diverse group of adults participating in a community day center activity, smiling and engaged (gallery-day-center.dim_400x300.png)\n- Adults with disabilities enjoying outdoor community recreation, sunny day, park or garden setting (gallery-community-rec.dim_400x300.png)\n- Professional caregiver sitting with an elderly or adult client in a comfortable home setting, warm and reassuring atmosphere (gallery-respite.dim_400x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-build-a-full-healthcare-community-care-landing-page-that-faithfully-reproduces-the-uploaded-design-the-page-must-include-1-a-sticky-top-navigation-bar-with-logo-nav-links-services-youth-programs-therapists-quality-control-and-a-cta-button-2-a-hero-section-with-a-bold-headline-reliable-care-rooted-in-community-subtitle-text-two-cta-buttons-stat-badges-24-7-100-toledo-and-a-hero-photo-on-the-right-3-a-recognized-by-trust-bar-with-logos-text-labels-ohio-dept-of-health-cpi-certified-dodd-accredited-cans-assessment-4-a-services-grid-section-titled-comprehensive-care-for-every-stage-with-6-service-cards-respite-services-adult-day-services-community-activities-vocational-rehab-non-medical-transport-on-call-nurse-activities-each-with-an-icon-title-description-and-link-5-a-full-width-dark-green-feature-banner-for-youth-group-homes-emergency-respite-with-bullet-points-a-cta-button-and-an-image-6-a-two-column-horse-and-animal-interactions-section-with-images-left-text-and-a-testimonial-quote-right-7-an-adult-day-programming-section-with-morning-afternoon-session-tabs-a-feature-highlight-card-and-an-image-8-an-uncompromising-standards-section-with-4-certification-badges-cpi-training-ppe-certified-cans-assessment-medical-oversight-9-a-dark-a-look-inside-our-homes-gallery-section-with-image-carousel-and-location-captions-10-a-dark-footer-cta-section-titled-start-a-new-chapter-of-care-with-a-contact-form-full-name-address-phone-message-submit-button-and-contact-info-column-11-a-multi-column-site-footer-with-logo-social-icons-and-link-columns-services-programs-join-our-mission",
+      "title": "Build a full healthcare/community care landing page that faithfully reproduces the uploaded design. The page must include: (1) a sticky top navigation bar with logo, nav links (Services, Youth Programs, Therapists, Quality Control), and a CTA button; (2) a hero section with a bold headline ('Reliable care, rooted in community.'), subtitle text, two CTA buttons, stat badges (24/7, 100%, Toledo), and a hero photo on the right; (3) a 'Recognized By' trust bar with logos/text labels (Ohio Dept of Health, CPI Certified, DODD Accredited, CANS Assessment); (4) a services grid section titled 'Comprehensive Care for Every Stage' with 6 service cards (Respite Services, Adult Day Services, Community Activities, Vocational Rehab, Non-Medical Transport, On-Call Nurse Activities), each with an icon, title, description, and link; (5) a full-width dark-green feature banner for 'Youth Group Homes & Emergency Respite' with bullet points, a CTA button, and an image; (6) a two-column 'Horse and Animal Interactions' section with images left, text and a testimonial quote right; (7) an 'Adult Day Programming' section with Morning/Afternoon session tabs, a feature highlight card, and an image; (8) an 'Uncompromising Standards' section with 4 certification badges (CPI Training, PPE Certified, CANS Assessment, Medical Oversight); (9) a dark 'A Look Inside Our Homes' gallery section with image carousel and location captions; (10) a dark footer CTA section titled 'Start a new chapter of care.' with a contact form (full name, address, phone, message, submit button) and contact info column; (11) a multi-column site footer with logo, social icons, and link columns (Services, Programs, Join Our Mission).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-visual-theme-across-the-entire-site-matching-the-reference-primary-green-2d7a5f-or-similar-deep-forest-green-for-headings-buttons-and-accents-warm-off-white-f7f5f2-page-background-dark-charcoal-1a1a2e-or-similar-for-dark-sections-clean-sans-serif-typography-with-large-bold-hero-headings-generous-white-space-rounded-pill-style-cta-buttons-in-green-and-outlined-variants-card-shadows-and-subtle-borders-for-service-cards",
+      "title": "Apply a consistent visual theme across the entire site matching the reference: primary green (#2D7A5F or similar deep forest green) for headings, buttons, and accents; warm off-white (#F7F5F2) page background; dark charcoal (#1A1A2E or similar) for dark sections; clean sans-serif typography with large bold hero headings; generous white space; rounded pill-style CTA buttons in green and outlined variants; card shadows and subtle borders for service cards.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-all-generated-images-as-static-assets-in-frontend-public-assets-generated-and-render-them-in-their-correct-sections-hero-photo-in-the-hero-section-group-home-photo-in-the-youth-group-homes-banner-horse-animal-interaction-photos-in-the-horse-and-animal-interactions-section-adult-day-programming-activity-photo-in-the-adult-day-programming-section-and-gallery-images-in-the-a-look-inside-our-homes-carousel",
+      "title": "Integrate all generated images as static assets in frontend/public/assets/generated and render them in their correct sections: hero photo in the hero section, group home photo in the Youth Group Homes banner, horse/animal interaction photos in the Horse and Animal Interactions section, adult day programming activity photo in the Adult Day Programming section, and gallery images in the 'A Look Inside Our Homes' carousel.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Community Care",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
